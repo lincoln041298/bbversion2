@@ -1,0 +1,13 @@
+.buttoncustom {
+  @include button(
+    var(--color-primary),
+    var(--color-grey-light-0),
+    var(--color-primary),
+    8px 20px
+  );
+}
+
+.buttoncustom:hover {
+  background-color: var(--color-primary);
+  color: var(--color-grey-light-0);
+}

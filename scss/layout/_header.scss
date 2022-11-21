@@ -1,0 +1,122 @@
+.header {
+  &__logo {
+    width: 12.4rem;
+  }
+
+  &__manager {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 0;
+  }
+
+  &__rightside {
+    display: flex;
+    align-items: center;
+  }
+
+  &__searchbar {
+    position: relative;
+    &--iconsearch {
+      position: absolute;
+      right: 1.5rem;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  &__account {
+    margin-left: 3rem;
+    display: flex;
+    align-items: center;
+    &--avatar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 0.8rem;
+      color: var(--color-primary);
+      padding: 0.2rem;
+      width: 3.2rem;
+      height: 3.2rem;
+      border-radius: 9999px;
+      border: 1px solid var(--color-primary);
+    }
+
+    &--name {
+      display: flex;
+    }
+
+    &--dropdown {
+      margin-top: 5px;
+      margin-left: 0.5rem;
+      width: 0.721rem;
+      height: 0.46rem;
+    }
+  }
+
+  &__exitandsort {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    &--exit {
+      @include adjustedFont(16px, var(--color-primary), 400);
+      padding: 0px 1rem;
+      border-left: 2px solid var(--color-grey-dark-1);
+    }
+
+    &--icon {
+      margin-left: 2.8rem;
+    }
+
+    &--sort {
+      position: relative;
+
+      .reddot {
+        position: absolute;
+        top: -2.5em;
+        right: -1rem;
+        width: 2rem;
+        height: 2rem;
+        background-color: var(--color-red);
+        border-radius: 9999px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--color-grey-light-1);
+      }
+    }
+  }
+
+  .text-primary {
+    @include adjustedFont(16px, var(--color-primary), 700);
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  .text-primary:hover {
+    text-decoration: underline;
+  }
+}
+
+.navbar {
+  background-color: var(--color-primary);
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+
+  &__control {
+    padding: 1.2rem;
+    a {
+      @include adjustedFont(16px, var(--color-grey-light-1), 400);
+    }
+  }
+  &__control:hover {
+    background-color: var(--color-grey-light-1);
+    a {
+      @include adjustedFont(16px, var(--color-primary), 400);
+    }
+  }
+}

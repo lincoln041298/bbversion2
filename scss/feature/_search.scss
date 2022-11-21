@@ -1,0 +1,6 @@
+@import './mixin';
+
+
+.searchbox {
+  @include searchbox(464px, 16px);
+}
